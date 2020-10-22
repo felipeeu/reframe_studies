@@ -4,9 +4,7 @@
    [re-frame.core :as re-frame]
    [reframe-studies.events :as events]
    [reframe-studies.views :as views]
-   [reframe-studies.config :as config]
-   ))
-
+   [reframe-studies.config :as config]))
 
 (defn dev-setup []
   (when config/debug?
