@@ -21,3 +21,18 @@
  ::blue-code
  (fn [db]
    (:blue-code db)))
+
+(re-frame/reg-sub
+ ::success-http-result
+ (fn [db]
+   (:success-http-result db)))
+
+(re-frame/reg-sub
+ ::failure-http-result
+ (fn [db]
+   (:failure-http-result db)))
+
+(re-frame/reg-sub
+ ::route
+ (fn [db]
+   (:route db)))

@@ -5,8 +5,12 @@
                                org.clojure/google-closure-library
                                org.clojure/google-closure-library-third-party]]
                  [thheller/shadow-cljs "2.11.4"]
+                 [day8.re-frame/http-fx "0.2.1"]
+                 [cljs-ajax "0.8.1"]
                  [reagent "0.10.0"]
-                 [re-frame "1.1.1"]]
+                 [re-frame "1.1.1"]
+                 [mattinieminen/re-fill "0.2.0"]]
+                 
 
   :plugins [[lein-shadow "0.3.1"]
             
@@ -28,8 +32,8 @@
                                                :preloads [devtools.preload]}}
 
                                :devtools {:http-root "resources/public"
-                                          :http-port 8280
-                                          }}}}
+                                          :http-port 8280}}}}
+                                          
   
   :shell {:commands {"karma" {:windows         ["cmd" "/c" "karma"]
                               :default-command "karma"}
@@ -66,8 +70,8 @@
    {:dependencies [[binaryage/devtools "1.0.2"]]
     :source-paths ["dev"]}
 
-   :prod {}
+   :prod {}}
    
-}
+
 
   :prep-tasks [])
